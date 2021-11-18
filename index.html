@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!--header-->
+    <section class="header" id="home">
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times fac" onclick="hidemenu()"></i>
+                <div class="image">
+                    <img src="./m2.jpg" alt="">
+                <figcaption class="caption">MADAN KUMAR</figcaption>
+                </div>
+                <ul>
+                    <li onclick="hidemenu()"><a href="#home"><i class="fa fa-home icons" ></i> Home</a></li>
+                    <li onclick="hidemenu()"><a href="#about"><i class="fa fa-info-circle icons"></i> About</a></li>
+                    <li onclick="hidemenu()"><a href="#projects"><i class="fa fa-briefcase icons"></i> Projects</a></li>
+                    <li onclick="hidemenu()"><a href="#contact"><i class="fa fa-phone-alt icons"></i> Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a onclick="hidemenu()" href="https://www.instagram.com/madan_200010/"><i class="fab fa-instagram socials"></i></a>
+                    <a  onclick="hidemenu()" href="https://www.instagram.com/madan_200010/"><i class="fab fa-linkedin socials"></i></a>
+                    <a  onclick="hidemenu()" href="mailto:madanvishnu555@gmail.com"><i class="fa fa-envelope socials"></i> </a>
+                    <a   onclick="hidemenu()" href="https://github.com/Madan555"><i class="fab fa-git socials"></i></a>
+                </div>
+            </div>
+            <i class="fa fa-bars fas" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>I'm <span>MADAN KUMAR</span></h1>
+            <p> interested in working together? <br> let's have a talk. </p>
+            <button class="cvs"><a  href="./Madan_resume.pdf" download="">download CV&nbsp;<i class="fa fa-download" aria-hidden="true"></i></a>
+            </button>
+        </div>
+      
+    </section>
+    <!--about section-->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col">
+                <div class="content-1">
+                    <h3>About</h3>
+                    <p>i primarily use <span>html,css</span> and <span>javascript</span> for web develping.and also now i started learning <span>reactjs</span> i can create responsive website for using all devices.and one thing is <b>every pro starts has a beginner</b> </p>
+              <h1>technical skills</h1>
+              <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                  <li>bootstrap</li>
+                  <li>web development</li>
+              </ul>
+                </div>
+            </div>
+            <div class="col">
+            <div class="content-2">
+                <img src="./about.png" alt="">
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--projects-->
+    <section class="projects" id="projects">
+        <h2 style="text-align: center; text-transform: capitalize; color: black;">my recent works</h2>
+        <div class="rows">          
+                <div class="cols">
+                    <img src="./pr1.jpg" alt="">
+                    <figcaption class="cap">
+                        <a href="https://travelwithmadan.netlify.app/">
+                        <h3>travel website</h3>
+                        <p>in this website i used html,css,bootstrap and also using little bit of javascripts it's fully responsive for all devices </p>
+                    </a>
+                </figcaption>
+                </div>
+                <div class="cols">
+                    <img src="./pr2.jpg" alt="">
+                    <figcaption class="cap">
+                        <a href="https://madansuniversity.netlify.app/">
+                        <h3>university website</h3>
+<p>this is the one i likes the most. i ues only html,css,js.it's fully responsive for all devices</p>                    </a>
+                 </figcaption>
+                </div>
+        </div>
+    </section>
+    <!--contact-->
+    <section class="contact" id="contact">
+        <div class="rowse">
+  <div class="form">
+      <h3>Leave Comment</h3>
+    <form action="https://formsubmit.co/madanvishnu555@gmail.com" class="forms" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <textarea name="comment" id="comment" rows="5" placeholder="Comment Here"></textarea>
+        <button type="submit" class="btn">Submit</button>
+   </form>
+  </div>
+</div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="links">
+            <h3>social media accounts</h3>
+            <a href="https://www.instagram.com/madan_200010/"><i class="fab fa-instagram linked"></i></a>
+            <a href="https://www.linkedin.com/in/madan-kumar-6663a3221/"><i class="fab fa-linkedin linked"></i></a>
+            <a href="mailto:madanvishnu555@gmail.com"><i class="fa fa-envelope linked"></i> </a>
+            <a href="https://github.com/Madan555"><i class="fab fa-git linked"></i></a>
+        </div>
+    </section>
+    <!--script-->
+    <script>
+ var navlinks = document.getElementById("nav-links");
+    function showmenu(){
+        navlinks.style.left ="0";
+    }
+    function hidemenu(){
+        navlinks.style.left ="-250px";
+    }
+    </script>
+</body>
+</html>
